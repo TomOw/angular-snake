@@ -1,0 +1,10 @@
+<div class="display">
+	<div class="display-row" *ngFor="let row of rows">
+		<div class="pixel"
+				 *ngFor="let pixel of row.pixels"
+				 (click)="pixel.active = true"
+				 [class.active]="pixel.active">
+			<div *ngIf="showCoordinates">{{pixel.x}},{{pixel.y}}</div>
+		</div>
+	</div>
+</div>

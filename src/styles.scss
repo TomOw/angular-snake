@@ -1,0 +1,13 @@
+@import "variables";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	background-color: $background-color;
+	min-height: 100vh;
+}
