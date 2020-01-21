@@ -1,5 +1,12 @@
-import {BodyParts} from './body-parts';
+import {BodyPart} from './body-part';
+import {Direction} from './direction';
 
 export class Snake {
-  body: BodyParts[];
+  body: BodyPart[];
+  direction: Direction;
+
+  constructor() {
+    this.body = [];
+    this.direction = Direction.DOWN;
+  }
 }
